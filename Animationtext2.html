@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container  > .two {
+          
+            color: whitesmoke;
+            border: solid 1px transparent;
+            text-align: center;
+            
+           
+          
+            
+        }
+       #one {
+               
+                text-align: center;
+            animation: one infinite 6s;
+        }
+        #three {
+            text-align: center;
+            animation: three infinite 6s;
+        }
+        .container{
+            
+           font-size: 45px;
+            animation: boarder infinite 6s;
+           
+        }
+        .container::before{
+           font-size: 45px;
+            width: 200px;
+            height: 160px;
+            animation: round infinite 6s;
+        }
+        @keyframes one{
+            0%{
+                font-size: 40px;
+                margin: 2px;
+                text-align: center;
+            }
+            33%{
+                margin-top: opx;
+                font-size: 30px;
+
+            }
+            66%{
+                margin-top: 10px;
+                margin-bottom:0px;
+                font-size: 28px;
+            }
+            100%{
+                margin: 2px;
+                text-align: center;
+            }
+
+
+        }
+        @keyframes three{
+              0%{
+                font-size: 40px;
+                margin: 2px;
+                text-align: center;
+            }
+            33%{
+                margin-left: -3px;
+                font-size: 30px;
+
+
+            }
+            66%{
+                margin: 0px;
+                font-size: 28px;
+            }
+            100%{
+                text-align: center;
+            }
+
+        }
+       
+        @keyframes boarder {
+            0%{
+                border: solid 1px black;
+                width: 240px;
+                height: 160px;
+                
+                margin-left: 5px;
+            }
+            33%{
+               width: 170px;
+               height: 160px;
+            }
+            66%{
+                width: 210px;
+                height: 145px;
+               
+               
+            }
+            100%{
+                border: solid 1px black;
+                 width: 240px;
+                height: 160px;
+                margin-left: 5px;
+            }
+        }
+        span::before{
+            content: "LIFESTYLE";
+            
+            animation: round infinite 6s;
+        }
+        @keyframes round {
+            0%{
+                font-size: 45px;
+                content:"LIFESTYLE" ;
+                background-color:green;
+            }
+            33%{
+                content: "WORK";
+                margin-left: 3px;
+                
+                font-size: 30px;
+               
+                background-color: cyan;
+            }
+            66%{
+                content: "EVERYTHING";
+                background-color: red;
+                font-size: 28px;
+               margin-right: 2px;
+                
+                
+            }
+            100%{
+                font-size: 45px;
+                content:"LIFESTYLE" ;
+                background-color:green;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+       <div id="one">MAKE</div>
+       <div class="two"><span></span></div>
+       <div id="three">AWESOME!</div>
+    </div>
+    
+</body>
+</html>

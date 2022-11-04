@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+
+.whole {
+    border: solid black 1px;
+    width: 420px;
+    height: 410px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+}
+
+.items {
+
+    width: 25px;
+    height: 20px;
+    text-align: start;
+
+    /* background-color: rgb(125, 122, 122); */
+
+}
+
+.calender {
+    width: 400px;
+    height: 500px;
+    display: grid;
+    margin-left: 10px;
+    text-align: justify;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(5, 40px);
+    grid-gap: 1px;
+
+}
+
+.days {
+    width: 300px;
+    height: 30px;
+    display: grid;
+    text-align: justify;
+    font-size: large;
+    grid-template-columns: repeat(7, 40px);
+    grid-template-rows: repeat(1, 40px);
+    grid-gap: 2px;
+    /* margin-left: 20px; */
+    /* margin-top: 10px; */
+    margin-bottom: 10px;
+    padding-top: 8px;
+    background-color: rgb(187, 185, 185);
+
+}
+
+h1 {
+
+    padding-bottom: 4px;
+    padding-left: 25px;
+}
+    </style>
+    
+</head>
+
+<body>
+    <div class="whole">
+        <h1 style="font-size:35px">4 NOV 2022</h1>
+        <ul type="none" class="days">
+            <li class="items">Sun</li>
+            <li class="items">Mon</li>
+            <li class="items">Tue</li>
+            <li class="items">Wed</li>
+            <li class="items">Thu</li>
+            <li class="items">Fri</li>
+            <li class="items">Sat</li>
+
+        </ul>
+
+        <div class="calender">
+            <div class="items item-30"><span style="color: rgba(45, 43, 43, 0.100);">30</span></div>
+            <div class="items item-31"><span style="color: rgba(45, 43, 43, 0.100);">31</span></div>
+            <div class="items item-1">1</div>
+            <div class="items item-2">2</div>
+            <div class="items item-3">3</div>
+            <div class="items item-4">4</div>
+            <div class="items item-5">5</div>
+            <div class="items item-6">6</div>
+            <div class="items item-7">7</div>
+            <div class="items item-8">8</div>
+            <div class="items item-9">9</div>
+            <div class="items item-10">10</div>
+            <div class="items item-11">11</div>
+            <div class="items item-12">12</div>
+            <div class="items item-13">13</div>
+            <div class="items item-14">14</div>
+            <div class="items item-15">15</div>
+            <div class="items item-16">16</div>
+            <div class="items item-17">17</div>
+            <div class="items item-18">18</div>
+            <div class="items item-19">19</div>
+            <div class="items item-20">20</div>
+            <div class="items item-21">21</div>
+            <div class="items item-22">22</div>
+            <div class="items item-23">23</div>
+            <div class="items item-24">24</div>
+            <div class="items item-25">25</div>
+            <div class="items item-26">26</div>
+            <div class="items item-27">27</div>
+            <div class="items item-28">28</div>
+            <div class="items item-29">29</div>
+            <div class="items item-30">30</div>
+            <div class="items item-31">31</div>
+
+        </div>
+
+    </div>
+</body>
+
+</html>
